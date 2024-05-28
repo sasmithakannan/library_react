@@ -1,0 +1,122 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-image: url('22.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Ivory with transparency */
+  border: 2px solid #8b4513; /* Saddle Brown */
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
+
+h1, h2 {
+  text-align: center;
+  background-color: #8b4513; /* Saddle Brown */
+  color: #f5deb3; /* Wheat */
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
+
+form {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+input[type="text"],
+textarea,
+button {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #8b4513; /* Saddle Brown */
+  padding: 10px;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 2px solid #8b4513; /* Saddle Brown */
+  padding: 15px;
+  margin-bottom: 30px;
+  margin-top: 70px;
+  color: #8b4513; /* Saddle Brown */
+  font-weight: bold;
+  background-color: rgba(245, 222, 179, 0.8); /* Wheat with transparency */
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
+
+.delete1 {
+  background-color: #cd5c5c; /* Indian Red */
+}
+
+button {
+  background-color: #8b4513; /* Saddle Brown */
+  color: #f5deb3; /* Wheat */
+  margin-top: 0;
+  border: none;
+  font-weight: bold;
+  font-size: large;
+  padding: 12px 20px;
+  cursor: pointer;
+  float: right;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
+
+button:hover {
+  background-color: #a0522d; /* Sienna */
+  transform: scale(1.1); /* Adding scale effect on hover */
+}
+
+.addstock {
+  margin-bottom: 20px;
+}
+
+.one {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 5px;
+  background-color: rgba(245, 222, 179, 0.8); /* Wheat with transparency */
+  border: 2px solid #8b4513; /* Saddle Brown */
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
+
+.three {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  margin-top: 30px;
+  background-color: rgba(245, 222, 179, 0.8); /* Wheat with transparency */
+  border: 2px solid #8b4513; /* Saddle Brown */
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  transition: all 0.3s ease-in-out; /* Adding transition */
+}
