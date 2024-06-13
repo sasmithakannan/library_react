@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "../styles/home.css";
+import './home.css';
 
 const LibraryCatalog = () => {
   const [entries, setEntries] = useState([]);
@@ -29,7 +29,7 @@ const LibraryCatalog = () => {
     e.preventDefault();
     try {
       if (editIndex !== null) {
-        await axios.put(`http://localhost:5000/catalog/${entries[editIndex].id}`, newEntry);
+        await axios.put(`http://localhost:5000/catalog/${entries[editIndex]._id}`, newEntry);
         const updatedEntries = [...entries];
         updatedEntries[editIndex] = newEntry;
         setEntries(updatedEntries);
@@ -59,6 +59,7 @@ const LibraryCatalog = () => {
       })
       .catch(error => console.error('Error deleting entry:', error));
   };
+  
 
   return (
     <div className='container'>
@@ -76,7 +77,7 @@ const LibraryCatalog = () => {
           <input
             type="text"
             name="author"
-            placeholder="Author "
+            placeholder="Author"
             value={newEntry.author}
             onChange={handleInputChange}
           />
@@ -93,12 +94,12 @@ const LibraryCatalog = () => {
       <div className='one'>
         <ul>
           {entries.map((entry, index) => (
-            <li key={index}>
+            <li key={entry._id}>
               <strong>{entry.title}</strong> by {entry.author} - Genre: {entry.genre}
               <div className='three'>
-              <button onClick={() => handleEdit(index)}>Edit✏️</button>
-              <button onClick={() => handleDelete(entry.id, index)}>Delete❌</button>
-            </div>
+                <button onClick={() => handleEdit(index)}>Edit✏️</button>
+                <button onClick={() => handleDelete(entry.id, index)}>Delete❌</button>
+              </div>
             </li>
           ))}
         </ul>
